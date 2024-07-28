@@ -15,7 +15,7 @@ const config = {
 };
 
 const buttons = [
-  // Create buttons here like
+  // Create buttons here like:
   // new Button(
   //   icon location,
   //   link
