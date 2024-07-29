@@ -12,6 +12,8 @@ A simplifyed rewrite of the [Bento start page](https://github.com/migueravila/Be
 - Customizable clock and greet messages
 - 4 color modes
 
+Please host on a server to ensure the icons and images load correctly from the configuration.
+
 # Customization
 
 ## All customizations can be done through the config.js file
