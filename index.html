@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New tab</title>
     <link rel="stylesheet" href="app.css">
+    <script defer src="scripts/Button.js"></script>
+    <script defer src="config.js"></script>
+    <script defer src="scripts/ButtonCreator.js"></script>
+    <script defer src="scripts/BackgroundImageManager.js"></script>
+    <script defer src="scripts/AccentColor.js"></script>
+    <script defer src="scripts/DateTimeManager.js"></script>
+    <script defer src="scripts/ThemeManager.js"></script>
+    <script defer src="scripts/SearchBar.js"></script>
 </head>
 <body>
     <div id="backgroundImage">
         <div id="overlay">
-            <a id="themeButton">
-                <div id="themeIcon"></div>
-            </a>
+            <img alt="Change themeManager" id="themeSwitcher">
             <div id="container">
                 <div class="greetContainer">
                     <div class="greetItem">
@@ -27,13 +33,5 @@
             </div>
         </div>
     </div>
-    <script src="scripts/model.js"></script>
-    <script src="config.js"></script>
-    <script src="scripts/buttons.js"></script>
-    <script src="scripts/background.js"></script>
-    <script src="scripts/color.js"></script>
-    <script src="scripts/update.js"></script>
-    <script src="scripts/theme.js"></script>
-    <script src="scripts/searchBar.js"></script>
 </body>
 </html>

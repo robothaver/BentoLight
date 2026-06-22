@@ -32,12 +32,9 @@ form {
 }
 
 #searchBarButton {
-    -webkit-mask: url("../assets/icons/default/search.svg") no-repeat center;
-    mask: url("../assets/icons/default/search.svg") no-repeat center;
-  background-color: var(--fg);
-  -webkit-mask-size: 2rem;
-  mask-size: 2rem;
   width: 2.75rem;
   height: 2.75rem;
   padding-left: 1rem;
+  filter: var(--filterNormal);
+  user-select: none;
 }

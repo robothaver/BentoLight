@@ -8,11 +8,13 @@
   --fg-primary: 12vh; /* Time and Greetings */
   --fg-secondary: 3vh; /* Greetings and Weather widger */
   --fg-date: 6.5vh; /* Date */
-  --button: 20vh;
+  --button: 19vh;
 
   /* Fonts Color */
   --fg: #3a3a3a; /* Foreground color */
   --sfg: #494949; /* Sceondary Foreground color */
+  --filterNormal: invert(0%);
+  --filterHover: invert(100%);
 
   /* Light Colors  */
   --accent: #57a0d9; /* Hover color */
@@ -20,10 +22,7 @@
   --cards: #e4e6e6; /* Cards color */
 
   /* Image overlay  */
-  --imgcol: linear-gradient(
-    rgba(255, 255, 255, 0.6),
-    rgba(255, 255, 255, 0.6)
-  );
+  --imgcol: rgba(255, 255, 255, 0.6);
 }
 
 [data-theme="dark"] {
@@ -34,12 +33,11 @@
   /* Fonts Color */
   --fg: #d8dee9; /* Foreground color */
   --sfg: #2c292e; /* Secondary Foreground color */
+  --filterNormal: invert(100%);
+  --filterHover: invert(0%);
 
   /* Image overlay  */
-  --imgcol: linear-gradient(
-    rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.8)
-  );
+  --imgcol: rgba(0, 0, 0, 0.8);
 }
 
 body {
@@ -58,26 +56,21 @@ body {
 #overlay {
   width: 100vw;
   height: 100vh;
-  background-image: var(--imgcol);
+  background-color: var(--imgcol);
 }
 
-#themeButton {
+#themeSwitcher {
+  transition: 0.2s ease-in-out;
   position: absolute;
   margin: 2em 2em 0 0;
   right: 0;
   top: 0;
-  color: var(--fg);
   border: none;
-  width: 1.5%;
-  cursor: pointer;
-  background-color: #00000000;
-}
-
-#themeIcon {
-  transition: 0.2s ease-in-out;
-  background-color: var(--fg);
   width: 25px;
   height: 25px;
+  cursor: pointer;
+  filter: var(--filterNormal);
+  user-select: none;
 }
 
 #container {

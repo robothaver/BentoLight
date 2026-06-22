@@ -24,7 +24,7 @@ const config = {
   imageBackground: false, // You can add images to the backgroundImages array
   twelveHourFormat: false,
   searchBar: true,
-  theme: "Original", // Original, Mint, Crimson, Pinky
+  themeManager: "Original", // Original, Mint, Crimson, Pinky
 
   // Greetings
   greetingMorning: "Good morning,",

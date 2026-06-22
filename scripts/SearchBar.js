@@ -2,7 +2,7 @@ function createSearchBar() {
   if (config.searchBar) {
     let container = document.getElementById("searchBarHolder");
     let content = `
-      <a href="#" id="searchButton"><div id="searchBarButton"></div></a>
+      <a href="#" id="searchButton"><img src="./assets/icons/default/search.svg" id="searchBarButton" alt="search"></img></a>
       <form id="form" onsubmit="return false">
         <input id="searchBar" type="text" placeholder="Search">
       </form>
@@ -44,7 +44,7 @@ function configureSearchBar() {
 
     button.onclick = function () {
       let searchTerm = searchBar.value;
-      if (searchTerm != "") {
+      if (searchTerm !== "") {
         window.location.href = `https://www.google.com/search?q=${searchTerm}`;
       }
     };

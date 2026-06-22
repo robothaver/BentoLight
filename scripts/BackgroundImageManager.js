@@ -13,7 +13,6 @@ function setBackground() {
     getRandomBackgroundImage();
   } else {
     let overlay = document.getElementById("overlay");
-    overlay.style.backgroundImage = "none";
     overlay.style["background-color"] = "var(--background)";
   }
 }
