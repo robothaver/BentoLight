@@ -1,7 +1,7 @@
 # BentoLight
-A simplifyed rewrite of the [Bento start page](https://github.com/migueravila/Bento)
+A simplified rewrite of the [Bento start page](https://github.com/migueravila/Bento)
 
-<img src="Readme/Showcase.png.png">
+<img src="Readme/Showcase.png" alt="BentoLight Showcase">
 
 # Features
 
@@ -11,6 +11,7 @@ A simplifyed rewrite of the [Bento start page](https://github.com/migueravila/Be
 - Customizable buttons
 - Customizable clock and greet messages
 - 4 color modes
+- No web server required, simply set `index.html` as your browser's home page
 
 # Customization
 
